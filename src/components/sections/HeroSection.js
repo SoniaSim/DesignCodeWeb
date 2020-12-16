@@ -1,17 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
+import PurchasseButton from "../buttons/PurchasseButton"
+import { themes } from "../styles/ColorStyles"
+import { H1, MediumText } from "../styles/TextStyles"
 
 function HeroSection() {
   return (
     <Wrapper>
       <ContentWrapper>
         <TextWrapper>
-          <Title>Design <br/> and code React apps</Title>
+          <Title>
+            Design <br /> and code React apps
+          </Title>
           <Description>
             Don’t skip design. Learn design and code, by building real apps with
             React and Swift. Complete courses about the best tools.
           </Description>
+          <PurchasseButton
+            title="Start learning"
+            subtitle="120+ hours of video"
+          />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
@@ -36,12 +44,7 @@ const TextWrapper = styled.div`
   gap: 30px;
 `
 
-const Title = styled.h1`
-  font-weight: bold;
-  font-size: 60px;
-  color: white;
+const Title = styled(H1)`
+  color: ${themes.dark.text1};
 `
-const Description = styled.p`
-  font-size: 17px;
-  line-height: 130%;
-`
+const Description = styled(MediumText)``
