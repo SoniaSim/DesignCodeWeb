@@ -1,19 +1,30 @@
-import styled from 'styled-components'
-
+import styled from "styled-components"
 
 export const H1 = styled.h1`
   font-weight: bold;
   font-size: 60px;
+
+  @media (max-width: 450px) {
+    font-size: 48px;
+  }
 `
 
 export const H2 = styled.h2`
   font-weight: bold;
   font-size: 40px;
+
+  @media (max-width: 450px) {
+    font-size: 28px;
+  }
 `
 
 export const H3 = styled.h3`
   font-weight: bold;
   font-size: 30px;
+
+  @media (max-width: 450px) {
+    font-size: 24px;
+  }
 `
 
 export const BodyIntro = styled.p`
